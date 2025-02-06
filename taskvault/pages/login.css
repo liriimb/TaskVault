@@ -1,0 +1,62 @@
+/* login.css */
+
+/* Ensure no default margin/padding */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Full-page background for login */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f8ff; /* Light, professional background color */
+    /* Optionally, you can add a background image for decorative lines, circles, etc.:
+       background-image: url('/images/background-pattern.png');
+       background-size: cover;
+       background-repeat: no-repeat;
+    */
+  }
+  
+  /* Login box styling */
+  .login-box {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title and subtitle styling */
+  .login-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .login-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  /* Login button styling with hover animation */
+  .login-button {
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .login-button:hover {
+    background-color: #4d94ff !important; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  
+  /* Message styling */
+  .login-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+  }  

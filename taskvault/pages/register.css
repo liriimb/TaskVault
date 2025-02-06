@@ -1,0 +1,64 @@
+/* register.css */
+
+/* Reset margins and paddings for a clean slate */
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Center the registration form on the page with a pleasant background */
+  .register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff; /* Light, professional background color */
+    /* Optionally, add a subtle background pattern or decorative lines:
+       background-image: url('/images/decorative-lines.png');
+       background-size: cover;
+       background-repeat: no-repeat;
+    */
+  }
+  
+  /* Style the registration box */
+  .register-box {
+    padding: 40px;
+    border-radius: 10px;
+    background-color: white;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Title styling */
+  .register-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Subtitle styling */
+  .register-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  /* Error message styling */
+  .register-error {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+  }
+  
+  /* Register button styling with hover animation */
+  .register-button {
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #4d94ff !important; /* Darker blue on hover */
+    transform: translateY(-3px); /* Slight lift effect */
+  }
+  

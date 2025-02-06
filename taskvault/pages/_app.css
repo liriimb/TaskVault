@@ -1,0 +1,80 @@
+/* App.css */
+
+/* Reset body and html margins/paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Full-width fixed navbar */
+.navbar {
+  background-color: #2f5174; /* Light blue */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed; /* Fixed at top */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Toolbar that fills the navbar */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 64px; /* Standard AppBar height */
+}
+
+/* Left section: Brand + Navigation Links */
+.left-section {
+  display: flex;
+  align-items: center;
+}
+
+/* Brand styling */
+.brand {
+  font-weight: bold;
+  font-size: 1.8rem;
+  color: white;
+  margin-right: 40px;
+}
+
+/* Navigation links (Home, Task List) */
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+/* Auth links (Login, Register, Logout) */
+.auth-links {
+  display: flex;
+  gap: 15px;
+}
+
+/* Override Material UI button styles if needed */
+.MuiButton-root {
+  color: white;
+  text-transform: none;
+  position: relative;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(196, 153, 89);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-button:hover::after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
